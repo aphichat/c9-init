@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TD_SITE="~/workspace/site/public"
+TD_SITE="~/workspace/site"
 
 if [ ! "$(ls -A ${TD_SITE}/public)" ]; then
   rm -r ${TD_SITE}/public
