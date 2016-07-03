@@ -9,6 +9,7 @@ if [ $1 = "-cms" ] && [ $3 = "-root" ]; then
     if [ -d ~/workspace ]; then
       # Cloud9 setup
       sudo cp $TD_CONF_FILE /$TD_CONF_FILE
+      mkdir ~/workspace/db
     fi
     # create working directory & setup CMS
     mkdir -p $4 && sh build/cms/$2.sh $4
