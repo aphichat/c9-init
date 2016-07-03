@@ -11,7 +11,7 @@ if [ $1 == "-cms" ] && [ $3 == "-root" ]; then
       sudo cp $TD_CONF_FILE /$TD_CONF_FILE
     fi
     # create working directory & setup CMS
-    mkdir -p $4 && sh cms/$2.sh $4
+    mkdir -p $4 && sh build/cms/$2.sh $4
   fi
 else
   echo "Error! please use -cms and -root flags"
