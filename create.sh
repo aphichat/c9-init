@@ -2,7 +2,7 @@
 
 TD_CONF_FILE="etc/apache2/sites-available/001-cloud9.conf"
 
-if [ $1 == "-cms" ] && [ $3 == "-root" ]; then
+if [ $1 = "-cms" ] && [ $3 = "-root" ]; then
   if [ "$(ls -A $4)" ]; then
     echo "Error! Root folder is not empty"
   else
